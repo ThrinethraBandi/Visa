@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1b1f23, #121417);
+    color: #dfe6e9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease;
+}
+
+.container {
+    background: rgba(31, 36, 41, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00e5ff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.7), 0 0 30px rgba(0, 229, 255, 0.5);
+}
+
+select, button {
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    margin-bottom: 20px;
+    background-color: #1f2329;
+    color: #dfe6e9;
+    outline: none;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+select:focus, button:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+}
+
+button {
+    background-color: #00e5ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #00b8d4;
+    transform: translateY(-5px);
+}
+
+button:active {
+    background-color: #00a0b3;
+}
+
+#visaMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.error {
+    color: #ff004f;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 0, 79, 0.7);
+}
+
+.success {
+    color: #00ff92;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 146, 0.7);
+}
+
+input[type="text"], select {
+    padding: 14px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1f2329;
+    color: #dfe6e9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+input[type="text"]:hover, select:hover {
+    border-color: #00e5ff;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #dfe6e9;
+    display: block;
+    margin-bottom: 6px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    select, button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    select, button {
+        font-size: 16px;
+    }
+}
